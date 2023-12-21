@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Design av Header */
+header {
+    height: 80px;
+    background-color: #87BEF0;
+    margin: 0;
+    position: relative;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 300px;
+    width: 70%;
+}
+
+/* Design av meny för mobilenheter, placeras till höger om skärmen */
+nav {
+    background-color: #87BEF0;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
+    font-size: 1.4em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 70%;
+    display: none;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    padding: 0.8em 0;
+    width: 100%;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 1em;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+nav li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Meny knapp, öppna meny */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #87BEF0;
+    border: black solid 2px;
+    cursor: pointer;
+}
+
+.open {
+    margin: 0 1em;
+}
+
+.menu-btn:hover {
+    background-color: #87BEF5;
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+/* de tre svarta strecken (hamburg-icon) */
+.bars {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+.menu-text {
+    font-size: 1.2em;
+    color: black;
+}
+
+/* Meny knapp, stäng */
+.close {
+    margin: 1em 1.5em;
+    padding: 10px 15px;
+
+}
+
+/* Roterar två lodräda streck, till ett kryss */
+.cross1 {
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+}
+
+.cross2 {
+    width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+}
+
+/* Media querys för meny*/
+
+/* Större skärmas - gör menyn som inline */
+@media only screen and (min-width: 1255px) {
+    header {
+        padding: 0 3em;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    #open-menu {
+        display: none !important;
+    }
+
+    header {
+        position: static;
+    }
+
+    nav {
+        display: block !important;
+        position: static;
+        box-shadow: 0 0px 0px;
+        height: auto;
+        font-size: 1.4em;
+        width: auto;
+    }
+
+    nav ul {
+        height: 100%;
+    }
+
+    nav li {
+        display: inline;
+        padding: 1.2em 0;
+    }
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+h2 {
+    margin: 1em 0;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+/* Stilar för footern och dess innehåll */
+footer {
+    background-color: #87BEF0;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kontaktfooter,
+.merinfofooter {
+    flex: 1;
+}
+
+footer a {
+    color: black;
+}
+
+@media screen and (max-width: 992px) {
+    footer a {
+        font-size: small;
+    }
+
+    footer p {
+        font-size: small;
+    }
+}
+
+
+
+/*Inlogg-sida*/
+
+/* Stilar för page-container för att centrera innehållet */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.page-container p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Stilar för form-container */
+.form-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* Anpassa bredden efter behov */
+}
+
+.footer-content h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stilar för formulär */
+.the-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="tel"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 30px;
+    padding: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+/* Stilar för form-footer */
+.form-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.merinfo {
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+.merinfo a {
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #214a71;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.merinfo a:hover {
+    background-color: #3372ad;
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 992px) {
+    .merinfo {
+        display: flex;
+        flex-direction: column;
+        /* Placera elementen under varandra */
+        margin-top: 4%;
+    }
+
+    .merinfo a {
+        margin-bottom: 4%;
+    }
+}
+
+.breadcrumb-container {
+    text-align: left;
+}
+
+/* Ändra för att placera innehållet uppe till vänster */
+.breadcrumb-container {
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    top: 80px;
+}
+
+.breadcrumb {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+    .breadcrumb {
+        font-size: 12px;
+    }
+}
+
+/*Style för reseval och merinfo sidorna*/
+.reseval {
+    display: flex;
+    flex-direction: column;
+    /* Placera elementen under varandra */
+    margin-top: 4%;
+    margin-bottom: 30%;
+}
+
+.reseval a {
+    padding: 30px 200px 30px 200px;
+    background-color: #214a71;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 992px) {
+    .reseval a {
+        padding: 5% 55px;
+    }
+}
+
+.reseval a:hover {
+    background-color: #3372ad;
+    text-decoration: underline;
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+/*Styling kontaktsidan*/
+.contactform-container {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.contactform-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactform-container label,
+.contactform-container select,
+.contactform-container textarea {
+    margin: none;
+}
+
+.contactform-container input[type="text"],
+.contactform-container input[type="email"],
+.contactform-container input[type="number"],
+.contactform-container select,
+.contactform-container textarea {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+.contactform-container #sendform {
+    padding: 15px 25px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactform-container #resetform {
+    padding: 15px 25px;
+    margin-top: 10px;
+    background-color: rgb(204, 32, 32);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactform-container #sendform:hover {
+    background-color: #358439;
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+.contactform-container #resetform:hover {
+    background-color: rgb(151, 14, 14);
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+/* Lägg till detta stycke */
+.contactform-container button {
+    margin-right: 10px;
+}
+
+/* För att skapa en rad med knappar */
+.contactform-container button:last-child {
+    margin-right: 0;
+}
+
+/* Gör flexbox rad */
+.btn-container {
+    flex-direction: row;
+    /* Ändra flex-direction till rad */
+    justify-content: center;
+    /* Centrera knapparna horisontellt */
+}
+
+.telefontider {
+    font-size: small;
+    margin-top: -20px;
+}
+
+.phone-mail-container {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+#kontaktaoss {
+    font-weight: 500;
+}
+
+/*Mina sidor styling*/
+.minauppg {
+
+}
+
+.minauppg li {
+    margin-bottom: 15px;
+}
+
+.minaresor {
+
+    background-color: #f0f0f0;
+    padding: 1% 10% 2% 10%;
+}
+
+.minaresor li {
+    list-style: none;
+}
+
+.minasidor-container {
+
+  }

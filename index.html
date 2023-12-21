@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Trelleborgs Färdtjänst</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="fardtjanstlogo.png" alt="Trelleborgs färdtjänst logotyp" class="logo"></a>
+        <!-- Meny knapp för att öppna mobilmenyn-->
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <!-- navigering -->
+        <nav id="nav-menu">
+            <!-- Knapp som visas om mobilmenyn är utfälld -->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <ul>
+                <li><a href="merinfo.html">Mer information</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><input type="search" name="search" id="searchbox"><button class="btn">Sök <i
+                            class="fas fa-search"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page-container">
+            <h1>Välkommen till Trelleborgs färdtjänst!</h1>
+            <p id="loggain">Logga in nedan för att komma vidare</p>
+
+            <div class="form-container">
+
+                <h2 class="title">Fyll i dina uppgifter nedan:</h2>
+                <form action="log-in" class="the-form">
+                    <label for="username">Användarnamn:</label>
+                    <input type="text" name="username" id="username" placeholder="Användarnamn">
+                    <br>
+                    <label for="password">Lösenord:</label>
+                    <input type="password" name="password" id="password" placeholder="Lösenord">
+                    <br>
+                    <input type="submit" value="Tryck här för att logga in" onclick="auth()">
+                </form>
+
+            </div><!-- FORM CONTAINER -->
+            <div class="form-footer">
+                <div>
+                    <p>Har du inget inlogg? Läs nedan hur du gör för att ansöka om rätt till färdtjänst.</p>
+                </div>
+                <div class="merinfo">
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i> Ansök om färdtjänst</a>
+                    <a href="#"><i class="fa-regular fa-circle-question"></i> Information om färdtjänst</a>
+                    <a href="#"><i class="fa-solid fa-wheelchair"></i> Tillgänglighetsredogörelse</a>
+                </div>
+            </div><!-- PAGE CONTAINER -->
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="kontaktfooter">
+                <h5>Kontakt:</h5>
+                <p>Telefon: 070700707</p>
+                <p>Mail: info@fardtjanst.se</p>
+            </div>
+            <div class="merinfofooter">
+                <h5>Mer information:</h5>
+                <a href="#">Ansök om färdtjänst</a><br>
+                <a href="#">Information om färdtjänst</a><br>
+                <a href="#">Tillgänglighetsredogörelse</a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
