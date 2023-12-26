@@ -23,7 +23,43 @@ function toggleMenu() {
     }
 }
 
+// Logga in
 function auth (){
-    window.location.assign("resa.html");
+    window.location.assign("bokaresa.html");
     alert("Du är inloggad!")
+}
+//Ändra resa
+function authTwo (){
+    window.location.assign("andrabokadresa.html");
+}
+
+//Ändra resa två
+function authThree () {
+    window.location.assign("andrabokadresatva.html");
+}
+
+//bokad resa konfirmation
+function bokadResa() {
+    alert("Tack för din bokning! Du har bokningsnummer 12345678.");
+}
+
+//Avboka resa 
+function avbokaResa () {
+    alert("Din resa är nu avbokad!");
+}
+
+//Knappar som visar text
+let coll = document.getElementsByClassName("collapsible");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("buttonactive");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
 }

@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Reseval</title>
+    <title>Ansök om färdtjänst</title>
 </head>
 
 <body>
     <header>
-        <a href="resa.html"><img src="fardtjanstlogo.png" alt="Trelleborgs färdtjänst logotyp" class="logo"></a>
+        <a href="bokaresa.html"><img src="fardtjanstlogo.png" alt="Trelleborgs färdtjänst logotyp" class="logo"></a>
         <!-- Meny knapp för att öppna mobilmenyn-->
         <button class="menu-btn open" id="open-menu">
             <span class="menu-icon">
@@ -36,9 +36,9 @@
                 <span class="menu-text">Stäng</span>
             </button>
             <ul>
-                <li><a href="resa.html" class="active">Reseval</a></li>
+                <li><a href="bokaresa.html">Boka Resa</a></li>
                 <li><a href="minasidor.html">Mina sidor</a></li>
-                <li><a href="merinfo.html">Mer information</a></li>
+                <li><a href="merinfo.html" class="active">Mer information</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
                 <li><input type="search" name="search" id="searchbox"><button class="btn">Sök <i
                             class="fas fa-search"></i></button></li>
@@ -47,14 +47,24 @@
     </header>
     <main>
         <div class="page-container">
-            <h1>Reseval</h1>
-            <div class="breadcrumb-container"><a href="resa.html" class="breadcrumb">Reseval /</a></div>
-            <div class="reseval">
-                <a href="#">Boka resa</a><br>
-                <a href="#">Avboka resa</a><br>
-                <a href="#">Ändra resa</a><br>
+            <h1 id="tillganglighetrubrik">Ansök om färdtjänst</h1>
+            <div class="breadcrumb-container"><a href="merinfo.html" class="breadcrumb">Mer information /</a><span> Ansök om
+                    färdtjänst</span></div>
+                </div><!-- PAGE CONTAINER -->
+            <div class="ansokdiv">
+                <h3>Så här ansöker du:</h3>
+                <a href="https://login.grandid.com/?sessionid=fbf9275ac0df90167b0d478edbfafb19">Du fyller i ansökan om
+                    färdtjänst (e-tjänst)</a> <br>
+                <a href="https://eservice.trelleborg.se/MenuGroup2.aspx?groupId=6">Du fyller i ansökan om färdtjänst
+                    (blankett att skriva ut - klicka på rubriken Färdtjänst)</a>
+                <p id="ansokfirstp">Du kan också hämta en blankett hos kundtjänst på Rådhuset (Algatan 13) där du kan få hjälp att fylla
+                    i den.</p>
+                <p>Tänk på att när du ansöker om färdtjänst ska läkarintyg skickas med ansökningsblanketten. När ditt
+                    beslut om färdtjänst går ut behöver du ansöka på nytt och skicka in nytt läkarutlåtande. Detta ska
+                    du göra minst en månad innan ditt nuvarande beslut går ut.</p>
+                <p>Handläggningstiden varierar beroende på hur många ansökningar som kommit in. Ansökningarna behandlas
+                    i tur och ordning.</p>
             </div>
-        </div><!-- PAGE CONTAINER -->
     </main>
     <footer>
         <div class="footer-content">
@@ -63,16 +73,14 @@
                 <p>Telefon: 070700707</p>
                 <p>Mail: info@fardtjanst.se</p>
                 <h5>Sidor:</h5>
-                <a href="#">Mina sidor</a><br>
-                <a href="#">Boka resa</a><br>
-                <a href="#">Avboka resa</a><br>
-                <a href="#">Ändra resa</a>
+                <a href="minasidor.html">Mina sidor</a><br>
+                <a href="bokaresa.html">Boka resa</a><br>
             </div>
             <div class="merinfofooter">
                 <h5>Mer information:</h5>
-                <a href="#">Ansök om färdtjänst</a><br>
-                <a href="#">Information om färdtjänst</a><br>
-                <a href="#">Tillgänglighetsredogörelse</a>
+                <a href="ansok.html">Ansök om färdtjänst</a><br>
+                <a href="infoomfardtjanst.html">Information om färdtjänst</a><br>
+                <a href="tillganglighet.html">Tillgänglighetsredogörelse</a>
             </div>
         </div>
     </footer>

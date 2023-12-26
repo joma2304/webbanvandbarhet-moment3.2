@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Reseval</title>
+    <title>Mina sidor</title>
 </head>
 
 <body>
     <header>
-        <a href="resa.html"><img src="fardtjanstlogo.png" alt="Trelleborgs färdtjänst logotyp" class="logo"></a>
+        <a href="bokaresa.html"><img src="fardtjanstlogo.png" alt="Trelleborgs färdtjänst logotyp" class="logo"></a>
         <!-- Meny knapp för att öppna mobilmenyn-->
         <button class="menu-btn open" id="open-menu">
             <span class="menu-icon">
@@ -36,7 +36,7 @@
                 <span class="menu-text">Stäng</span>
             </button>
             <ul>
-                <li><a href="resa.html">Reseval</a></li>
+                <li><a href="bokaresa.html">Boka resa</a></li>
                 <li><a href="minasidor.html" class="active">Mina sidor</a></li>
                 <li><a href="merinfo.html">Mer information</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
@@ -46,6 +46,7 @@
         </nav>
     </header>
     <main>
+        <div class="page-container">
             <h1>Mina sidor</h1>
             <div class="breadcrumb-container"><a href="minasidor.html" class="breadcrumb">Mina sidor /</a></div>
             <div class="minauppg">
@@ -59,9 +60,11 @@
                     <li><b>Telefonnummer:</b> 0712345678</li>
                     <li><b>Mailadress:</b> bob@mail.se</li>
                 </ul>
-                <button id="uppdateinfo" title="Tryck här för att uppdatera din information">Tryck här för att uppdatera
+                <button id="uppdateinfo" title="Tryck här för att uppdatera din information"><i
+                        class="fa-solid fa-pen-to-square"></i> Uppdatera
                     informationen om dig</button>
-                <button id="log-out" title="Tryck här för att logga ut">Tryck här för att logga ut</button>
+                <button id="log-out" title="Tryck här för att logga ut"><i
+                        class="fa-solid fa-arrow-right-from-bracket"></i><a href="index.html" class="andraresastyle">Logga ut</a></button>
             </div>
             <div class="minasidor-container">
                 <div class="minaresor">
@@ -72,26 +75,34 @@
                         <li>Tid: Kl 12.15</li>
                         <li>Från: Hansagatan 4</li>
                         <li>Till: Styrmansvägen 12</li>
+                        <li>Bokningsnummer: 92345678</li>
                     </ul>
+                    <button onclick="authTwo()" id="andraresa" title="Tryck här för att ändra resor"><i
+                        class="fa-solid fa-pen-to-square"></i> Ändra resa</button>
+                <button onclick="avbokaResa()" id="avbokaresa" title="Tryck här för att avboka resor"><i class="fa-solid fa-xmark"></i>
+                    Avboka resa</button>
                     <br>
                     <ul>
                         <li>Datum: 2024-01-25</li>
                         <li>Tid: Kl 09.30</li>
                         <li>Från: Hansagatan 4</li>
                         <li>Till: Algatan 22</li>
-                        <button id="andraresa" title="Ändra resa">Ändra resa</button>
-                        <button id="avbokaresa" title="Avboka resa">Avboka resa</button>
+                        <li>Bokningsnummer: 12635678</li>
                     </ul>
+                    <button onclick="authThree()" id="andraresa" title="Tryck här för att ändra resor"><i
+                            class="fa-solid fa-pen-to-square"></i> Ändra resa</button>
+                    <button onclick="avokaResa()" id="avbokaresa" title="Tryck här för att avboka resor"><i class="fa-solid fa-xmark"></i>
+                        Avboka resa</button>
                     <br>
                     <p>Tidigare resor:</p>
                     <ul>
-                        <li>Datum: 2023-12-02</li>
-                        <li>Datum: 2023-12-09</li>
-                        <li>Datum: 2023-12-16</li>
-                        <li>Datum: 2023-12-23</li>
+                        <li class="tidigareresa">Datum: 2023-12-02</li>
+                        <li class="tidigareresa">Datum: 2023-12-09</li>
+                        <li class="tidigareresa">Datum: 2023-12-16</li>
                     </ul>
                 </div>
             </div>
+        </div><!-- PAGE CONTAINER -->
     </main>
     <footer>
         <div class="footer-content">
@@ -100,16 +111,14 @@
                 <p>Telefon: 070700707</p>
                 <p>Mail: info@fardtjanst.se</p>
                 <h5>Sidor:</h5>
-                <a href="#">Mina sidor</a><br>
-                <a href="#">Boka resa</a><br>
-                <a href="#">Avboka resa</a><br>
-                <a href="#">Ändra resa</a>
+                <a href="minasidor.html">Mina sidor</a><br>
+                <a href="bokaresa.html">Boka resa</a><br>
             </div>
             <div class="merinfofooter">
                 <h5>Mer information:</h5>
-                <a href="#">Ansök om färdtjänst</a><br>
-                <a href="#">Information om färdtjänst</a><br>
-                <a href="#">Tillgänglighetsredogörelse</a>
+                <a href="ansok.html">Ansök om färdtjänst</a><br>
+                <a href="infoomfardtjanst.html">Information om färdtjänst</a><br>
+                <a href="tillganglighet.html">Tillgänglighetsredogörelse</a>
             </div>
         </div>
     </footer>

@@ -33,6 +33,7 @@ nav {
     height: 100vh;
     width: 70%;
     display: none;
+    z-index: 999;
 }
 
 nav ul {
@@ -224,7 +225,7 @@ footer a {
 
 h1 {
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 8%;
     margin-bottom: 5%;
 }
 
@@ -337,8 +338,17 @@ input[type="submit"]:hover {
     font-size: 16px;
 }
 
+.breadcrumb-container span {
+    font-size: 16px;
+
+}
+
 @media screen and (max-width: 992px) {
     .breadcrumb {
+        font-size: 12px;
+    }
+
+    .breadcrumb-container span {
         font-size: 12px;
     }
 }
@@ -389,12 +399,6 @@ input[type="submit"]:hover {
     align-items: center;
 }
 
-.contactform-container label,
-.contactform-container select,
-.contactform-container textarea {
-    margin: none;
-}
-
 .contactform-container input[type="text"],
 .contactform-container input[type="email"],
 .contactform-container input[type="number"],
@@ -416,7 +420,7 @@ textarea {
     background-color: #4caf50;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -427,7 +431,7 @@ textarea {
     background-color: rgb(204, 32, 32);
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -475,10 +479,6 @@ textarea {
 }
 
 /*Mina sidor styling*/
-.minauppg {
-
-}
-
 .minauppg li {
     margin-bottom: 15px;
 }
@@ -493,6 +493,251 @@ textarea {
     list-style: none;
 }
 
-.minasidor-container {
+.minauppg {
+    margin-bottom: 3%;
+}
 
-  }
+#uppdateinfo {
+    padding: 15px 25px;
+    margin-top: 10px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#uppdateinfo:hover {
+    background-color: rgb(28, 87, 165);
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+#log-out:hover {
+    background-color: rgb(64, 64, 64);
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+#log-out {
+    padding: 15px 25px;
+    margin-top: 10px;
+    background-color: rgb(126, 126, 126);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.minaresor {
+    max-width: 600px;
+    width: 80vw;
+    margin-bottom: 5%;
+    line-height: 1.4em;
+}
+
+.minaresor p {
+    text-align: left;
+}
+
+#andraresa {
+    padding: 10px 25px;
+    margin-bottom: 10px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#andraresa:hover {
+    background-color: rgb(28, 87, 165);
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+#avbokaresa {
+    padding: 10px 25px;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#avbokaresa:hover {
+    background-color: rgb(147, 14, 14);
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+.tidigareresa {
+    text-decoration: underline;
+}
+
+/*Ansök sida styling*/
+
+.ansokdiv {
+    text-align: left;
+    margin-top: 3%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ansokdiv a {
+    font-size: 120%;
+}
+
+.ansokdiv p {
+    margin-bottom: 4%;
+}
+
+.ansokdiv p:last-child {
+    margin-bottom: 10%;
+}
+
+#ansokfirstp {
+    margin-top: 3%;
+}
+
+/*Tillgänglighetsredogörelse styling*/
+.tillganglighetdiv {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
+.tillganglighetdiv p {
+    margin-bottom: 4%;
+}
+
+@media screen and (max-width: 692px) {
+    #tillganglighetrubrik {
+        margin-top: 10%;
+        font-size: 120%;
+    }
+}
+
+/*Styling för mer information om färdtjänst*/
+.collapsible {
+    background-color: #bdcfe1;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    margin-top: 5%;
+    font-size: 120%;
+}
+
+.buttonactive,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+/*Note: hidden by default */
+.buttoncontent {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.buttoncontent {
+    line-height: 1.4em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collapsible:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.buttonactive:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.prislista {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.flerfragor {
+    margin-bottom: 10%;
+}
+
+/*Boka resa styling*/
+.bokaresaform-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#additional-info {
+   resize: vertical;
+   width: 80%;
+}
+
+@media screen and (min-width: 992px) {
+    .bokaresaform {
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 50px 200px 50px 200px;
+        border-radius: 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .bokaresaform {
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px 65px 20px 65px;
+        border-radius: 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 5%;
+    }
+}
+
+#booktrip {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 110%;
+}
+
+#booktrip:hover {
+    background-color: #358439;
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+.kommanderesor {
+    text-align: left;
+}
+
+.andraresastyle {
+    color: white;
+    text-decoration: none;
+}
+
+.emptydiv {
+    margin-bottom: 20%;
+}

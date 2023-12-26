@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Information om färdtjänst</title>
+</head>
+
+<body>
+    <header>
+        <a href="bokaresa.html"><img src="fardtjanstlogo.png" alt="Trelleborgs färdtjänst logotyp" class="logo"></a>
+        <!-- Meny knapp för att öppna mobilmenyn-->
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <!-- navigering -->
+        <nav id="nav-menu">
+            <!-- Knapp som visas om mobilmenyn är utfälld -->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <ul>
+                <li><a href="bokaresa.html">Boka resa</a></li>
+                <li><a href="minasidor.html">Mina sidor</a></li>
+                <li><a href="merinfo.html" class="active">Mer information</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><input type="search" name="search" id="searchbox"><button class="btn">Sök <i
+                            class="fas fa-search"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page-container">
+            <h1 id="tillganglighetrubrik">Information om färdtjänst</h1>
+            <div class="breadcrumb-container"><a href="merinfo.html" class="breadcrumb">Mer information /</a><span>
+                    Information om färdtjänst</span></div>
+        </div><!-- PAGE CONTAINER -->
+        <button type="button" title="Tryck för att fälla ut text" class="collapsible">Vem kan få färdtjänst?</button>
+        <div class="buttoncontent">
+            <p>Grundkraven för att du ska kunna få färdtjänst är:</p>
+            <ul>
+                <li>Du ska ha stora svårigheter att förflytta dig på egen hand</li>
+                <li>Du ska ha svårt att använda vanliga bussar och tåg i kollektivtrafik</li>
+                <li>Du måste vara skriven som bosatt i den kommun där du ansöker om färdtjänst</li>
+                <li>Funktionsnedsättningen ska ha funnits ett längre tag, minst 6 månader och det ska förväntas
+                    fortsätta.</li>
+                <li>Även om du håller på med rehabilitering så har du rätt att använda färdtjänst. Tanken är att
+                    färdtjänst ska vara en ersättning för den som inte kan resa med kollektivtrafiken.</li>
+            </ul>
+        </div>
+        <button type="button" title="Tryck för att fälla ut text" class="collapsible">Krav för färdtjänst i
+            Trelleborgskommun</button>
+        <div class="buttoncontent">
+            <p>Du ska vara folkbokförd i Trelleborgs kommun för att kunna ansöka om färdtjänst. Färdtjänst innebär att
+                du reser tillsammans med andra resenärer. Till skillnad från taxiresor åker du därför inte alltid
+                närmaste vägen till resmålet.</p><br>
+            <p>Kraven för att beviljas färdtjänst är högt ställda:</p>
+            <ul>
+                <li>Kan du, om än med vissa svårigheter, förflytta dig på egen hand eller resa med allmänna
+                    kommunikationsmedel har du inte rätt till färdtjänst.</li>
+                <li>Tillfälliga funktionsnedsättningar under tre månader ger dig inte rätt till färdtjänst.</li>
+                <li>Avsaknaden av eller avståndet till allmänna kommunikationer är inte heller ett skäl till att
+                    beviljas färdtjänst.</li>
+            </ul>
+        </div>
+        <button type="button" title="Tryck för att fälla ut text" class="collapsible">Att tänka på</button>
+        <div class="buttoncontent">
+            <ul>
+                <li>Gör din beställning senast en timme före avresa. Om resan är längre än 48 kilometer måste du däremot
+                    beställa senast 24 timmar vardagen innan resan ska äga rum.</li>
+                <li>Resan ska påbörjas och avslutas inom Trelleborgs kommun.</li>
+                <li>Beställning av resa där trappklättrare ska användas ska göras 3 timmar innan resan ska äga rum.</li>
+                <li>Vid färdtjänstresa efter inköp får du endast ta med dig motsvarande två bärkassar.</li>
+                <li>Om ditt ärende gäller sjukresa kontaktar du Skånetrafikens sjukresehandläggare.</li>
+            </ul>
+        </div>
+        <div class="prislista">
+            <h3>Priser:</h3>
+            <a
+                href="https://www.trelleborg.se/kommun-politik/fakta-om-kommunen/avgifter-och-taxor/fardtjanst-avgifter/">Tryck
+                här för att se prislista</a>
+        </div>
+        <div class="flerfragor"><h3>Har du fler frågor?</h3><p>Kontakta oss på: <br>
+            Mail: info@fardtjänst.se <br>
+            Telefon: 070700707</p></div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="kontaktfooter">
+                <h5>Kontakt:</h5>
+                <p>Telefon: 070700707</p>
+                <p>Mail: info@fardtjanst.se</p>
+                <h5>Sidor:</h5>
+                <a href="minasidor.html">Mina sidor</a><br>
+                <a href="bokaresa.html">Boka resa</a><br>
+            </div>
+            <div class="merinfofooter">
+                <h5>Mer information:</h5>
+                <a href="ansok.html">Ansök om färdtjänst</a><br>
+                <a href="infoomfardtjanst.html">Information om färdtjänst</a><br>
+                <a href="tillganglighet.html">Tillgänglighetsredogörelse</a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
