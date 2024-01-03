@@ -182,6 +182,7 @@ main p {
 footer {
     background-color: #87BEF0;
     padding: 20px;
+    line-height: 1.4em;
 }
 
 .footer-content {
