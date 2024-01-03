@@ -28,6 +28,13 @@ function auth (){
     window.location.assign("bokaresa.html");
     alert("Du är inloggad!")
 }
+
+//Logga ut
+function logOut (){
+  window.location.assign("index.html");
+  alert("Du är utloggad!")
+}
+
 //Ändra resa
 function authTwo (){
     window.location.assign("andrabokadresa.html");

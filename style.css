@@ -542,7 +542,7 @@ textarea {
 #andraresa {
     padding: 10px 25px;
     margin-bottom: 10px;
-    background-color: rgb(255, 149, 0);
+    background-color: rgb(255, 136, 0);
     color: white;
     border: none;
     border-radius: 15px;
@@ -552,6 +552,57 @@ textarea {
 }
 
 #andraresa:hover {
+    background-color: rgb(165, 112, 28);
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+#andraresa2 {
+    padding: 10px 25px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 136, 0);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#andraresa2:hover {
+    background-color: rgb(165, 112, 28);
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+#andraresa3 {
+    padding: 10px 25px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 136, 0);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#andraresa3:hover {
+    background-color: rgb(165, 112, 28);
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+#andraresa4 {
+    padding: 10px 25px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 136, 0);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#andraresa4:hover {
     background-color: rgb(165, 112, 28);
     box-shadow: 0 0px 5px rgb(0, 0, 0);
 }
@@ -569,6 +620,57 @@ textarea {
 }
 
 #avbokaresa:hover {
+    background-color: rgb(147, 14, 14);
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+#avbokaresa2 {
+    padding: 10px 25px;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#avbokaresa2:hover {
+    background-color: rgb(147, 14, 14);
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+#avbokaresa3 {
+    padding: 10px 25px;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#avbokaresa3:hover {
+    background-color: rgb(147, 14, 14);
+    box-shadow: 0 0px 5px rgb(0, 0, 0);
+}
+
+#avbokaresa4 {
+    padding: 10px 25px;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#avbokaresa4:hover {
     background-color: rgb(147, 14, 14);
     box-shadow: 0 0px 5px rgb(0, 0, 0);
 }

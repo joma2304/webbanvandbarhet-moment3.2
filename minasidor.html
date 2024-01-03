@@ -40,7 +40,7 @@
                 <li><a href="minasidor.html" class="active">Mina sidor</a></li>
                 <li><a href="merinfo.html">Mer information</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
-                <li><input type="search" name="search" id="searchbox"><button class="btn">Sök <i
+                <li><input type="search" aria-label="Sökfält" name="search" id="searchbox"><button class="btn">Sök <i
                             class="fas fa-search"></i></button></li>
             </ul>
         </nav>
@@ -61,10 +61,10 @@
                     <li><b>Mailadress:</b> bob@mail.se</li>
                 </ul>
                 <button id="uppdateinfo" title="Tryck här för att uppdatera din information"><i
-                        class="fa-solid fa-pen-to-square"></i> Uppdatera
+                        class="fa-solid fa-user-pen"></i> Uppdatera
                     informationen om dig</button>
-                <button id="log-out" title="Tryck här för att logga ut"><i
-                        class="fa-solid fa-arrow-right-from-bracket"></i><a href="index.html" class="andraresastyle">Logga ut</a></button>
+                <button onclick="logOut()" id="log-out" title="Tryck här för att logga ut"><i
+                        class="fa-solid fa-arrow-right-from-bracket"></i> Logga ut</button>
             </div>
             <div class="minasidor-container">
                 <div class="minaresor">
@@ -77,10 +77,11 @@
                         <li>Till: Styrmansvägen 12</li>
                         <li>Bokningsnummer: 92345678</li>
                     </ul>
-                    <button onclick="authTwo()" id="andraresa" title="Tryck här för att ändra resor"><i
-                        class="fa-solid fa-pen-to-square"></i> Ändra resa</button>
-                <button onclick="avbokaResa()" id="avbokaresa" title="Tryck här för att avboka resor"><i class="fa-solid fa-xmark"></i>
-                    Avboka resa</button>
+                    <button onclick="authTwo()" id="andraresa3" title="Tryck här för att ändra resor"><i
+                            class="fa-solid fa-pen-to-square"></i> Ändra resa</button>
+                    <button onclick="avbokaResa()" id="avbokaresa3" title="Tryck här för att avboka resor"><i
+                            class="fa-solid fa-xmark"></i>
+                        Avboka resa</button>
                     <br>
                     <ul>
                         <li>Datum: 2024-01-25</li>
@@ -89,9 +90,10 @@
                         <li>Till: Algatan 22</li>
                         <li>Bokningsnummer: 12635678</li>
                     </ul>
-                    <button onclick="authThree()" id="andraresa" title="Tryck här för att ändra resor"><i
+                    <button onclick="authThree()" id="andraresa4" title="Tryck här för att ändra resor"><i
                             class="fa-solid fa-pen-to-square"></i> Ändra resa</button>
-                    <button onclick="avbokaResa()" id="avbokaresa" title="Tryck här för att avboka resor"><i class="fa-solid fa-xmark"></i>
+                    <button onclick="avbokaResa()" id="avbokaresa4" title="Tryck här för att avboka resor"><i
+                            class="fa-solid fa-xmark"></i>
                         Avboka resa</button>
                     <br>
                     <p>Tidigare resor:</p>
