@@ -712,6 +712,10 @@ textarea {
     margin-bottom: 4%;
 }
 
+.tillganglighetdiv h2 {
+    font-size: 110%;
+}
+
 @media screen and (max-width: 692px) {
     #tillganglighetrubrik {
         margin-top: 10%;
@@ -766,8 +770,11 @@ textarea {
     /* Unicode character for "minus" sign (-) */
 }
 
-.prislista {
-    margin-top: 10%;
+.prislista, h2 {
+    margin-bottom: 1px;
+}
+
+.prislista, a {
     margin-bottom: 5%;
 }
 
