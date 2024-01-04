@@ -182,7 +182,7 @@ main p {
 footer {
     background-color: #87BEF0;
     padding: 20px;
-    line-height: 1.4em;
+    line-height: 2.4em;
 }
 
 footer h3 {
@@ -204,8 +204,6 @@ footer h3 {
 }
 
 footer a {
-    padding-top: 20px;
-    padding-bottom: 20px;
     color: black;
 }
 
