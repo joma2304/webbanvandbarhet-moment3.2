@@ -192,14 +192,12 @@ footer h2 {
 
 .footer-content {
     display: flex;
-    justify-content: center;
-    max-width: 1200px;
+
     margin: 0 auto;
 }
 
 .kontaktfooter,
-.merinfofooter,
-.loggautfooter {
+.merinfofooter {
     flex: 1;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -800,8 +798,8 @@ textarea {
 }
 
 #additional-info {
-   resize: vertical;
-   width: 80%;
+    resize: vertical;
+    width: 80%;
 }
 
 @media screen and (min-width: 992px) {
