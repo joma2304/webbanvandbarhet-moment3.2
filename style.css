@@ -198,7 +198,8 @@ footer h2 {
 }
 
 .kontaktfooter,
-.merinfofooter {
+.merinfofooter,
+.loggautfooter {
     flex: 1;
     margin-top: 2%;
     margin-bottom: 2%;
