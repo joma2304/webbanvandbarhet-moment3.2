@@ -199,9 +199,13 @@ footer h3 {
 .kontaktfooter,
 .merinfofooter {
     flex: 1;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 footer a {
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: black;
 }
 
