@@ -185,8 +185,9 @@ footer {
     line-height: 2.4em;
 }
 
-footer h3 {
+footer h2 {
     font-size: 100%;
+    margin-bottom: -5px;
 }
 
 .footer-content {
