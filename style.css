@@ -376,6 +376,7 @@ input[type="submit"]:hover {
     text-decoration: none;
     color: white;
     border-radius: 30px;
+    margin-bottom: 5%;
 }
 
 @media screen and (max-width: 992px) {
@@ -856,3 +857,5 @@ textarea {
 .emptydiv {
     margin-bottom: 20%;
 }
+
+/*Media för firefox*/
