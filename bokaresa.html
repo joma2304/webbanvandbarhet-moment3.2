@@ -47,11 +47,10 @@
     </header>
     <main>
         <div class="page-container">
-            <h1>Ändra bokad resa</h1>
-            <div class="breadcrumb-container"><a href="bokaresa.html" class="breadcrumb">Boka resa /</a><span>Ändra bokad resa</span></div>
+            <h1>Boka resa</h1>
+            <div class="breadcrumb-container"><a href="bokaresa.html" class="breadcrumb">Boka resa /</a></div>
             <div class="bokaresaform-container">
                 <form class="bokaresaform">
-                    <p>Fyll i nedan för att ändra resa med bokningsnummer: 12635678</p>
                     <label for="travel-time"><i class="fa-regular fa-clock"></i> Tid för resa:</label><br>
                     <input type="time" id="travel-time" name="travel-time"><br>
 
@@ -100,10 +99,52 @@
                         <option value="varje-manad">Varje månad</option>
                     </select><br>
                     <div class="btn-container">
-                        <button id="booktrip" title="Tryck här för att boka din resa" onclick="bokadResa()">Uppdatera bokad resa <i
+                        <button id="booktrip" title="Tryck här för att boka din resa" onclick="bokadResa()">Boka resa <i
                                 class="fa-solid fa-taxi"></i></button>
                     </div>
                 </form>
+            </div>
+            <button type="button" title="Tryck för att se kommande resor" class="collapsible" id="lastbutton">Ändra eller avboka
+                kommande resor:</button>
+            <div class="buttoncontent">
+                <div class="minaresor2">
+                    <h2>Mina resor</h2>
+                    <p id="kommanderesor">Kommande bokade resor:</p>
+                    <ul>
+                        <li>Datum: 2024-01-22</li>
+                        <li>Tid: Kl 12.15</li>
+                        <li>Från: Hansagatan 4</li>
+                        <li>Till: Styrmansvägen 12</li>
+                        <li>Bokningsnummer: 92345678</li>
+                    </ul>
+                    <button onclick="authTwo()" id="andraresa" title="Tryck här för att ändra resor"><i
+                        class="fa-solid fa-pen-to-square"></i> Ändra resa</button>
+                <button onclick="avbokaResa()" id="avbokaresa" title="Tryck här för att avboka resor"><i class="fa-solid fa-xmark"></i>
+                    Avboka resa</button>
+                    <br>
+                    <ul>
+                        <li>Datum: 2024-01-25</li>
+                        <li>Tid: Kl 09.30</li>
+                        <li>Från: Hansagatan 4</li>
+                        <li>Till: Algatan 22</li>
+                        <li>Bokningsnummer: 12635678</li>
+                    </ul>
+                    <button onclick="authThree()" id="andraresa2" title="Tryck här för att ändra resor"><i
+                            class="fa-solid fa-pen-to-square"></i> Ändra resa</button>
+                    <button onclick="avbokaResa()" id="avbokaresa2" title="Tryck här för att avboka resor"><i class="fa-solid fa-xmark"></i>
+                        Avboka resa</button>
+                </div>
+            </div>
+            <button type="button" title="Tryck för att fälla ut text" class="collapsible">Att tänka på vid resor</button>
+            <div class="buttoncontent">
+                <ul>
+                    <li>Gör din beställning senast en timme före avresa. Om resan är längre än 48 kilometer måste du däremot
+                        beställa senast 24 timmar vardagen innan resan ska äga rum.</li>
+                    <li>Resan ska påbörjas och avslutas inom Trelleborgs kommun.</li>
+                    <li>Beställning av resa där trappklättrare ska användas ska göras 3 timmar innan resan ska äga rum.</li>
+                    <li>Vid färdtjänstresa efter inköp får du endast ta med dig motsvarande två bärkassar.</li>
+                    <li>Om ditt ärende gäller sjukresa kontaktar du Skånetrafikens sjukresehandläggare.</li>
+                </ul>
             </div>
             <div class="emptydiv"></div>
         </div><!-- PAGE CONTAINER -->

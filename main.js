@@ -25,13 +25,13 @@ function toggleMenu() {
 
 // Logga in
 function auth (){
-    window.location.assign("index.html");
+    window.location.assign("bokaresa.html");
     alert("Du är inloggad!")
 }
 
 //Logga ut
 function logOut (){
-  window.location.assign("login.html");
+  window.location.assign("index.html");
   alert("Du är utloggad!")
 }
 
