@@ -23,11 +23,6 @@ function toggleMenu() {
     }
 }
 
-// Logga in
-function auth (){
-    window.location.assign("bokaresa.html");
-    alert("Du är inloggad!")
-}
 
 //Logga ut
 function logOut (){

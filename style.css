@@ -286,6 +286,7 @@ input[type="tel"] {
 }
 
 .loginbtn {
+    text-decoration: none;
     text-align: center;
     background-color: #2e7130;
     color: white;
