@@ -818,16 +818,29 @@ textarea {
     margin-bottom: 10%;
 }
 
-/*Boka resa styling*/
-.bokaresaform-container form {
+/* Boka resa styling */
+.bokaresaform-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* Ändra till rad för att placera labelfälten och inputfälten bredvid varandra */
+    align-items: center; /* Justera detta efter behov */
+}
+
+.bokaresaform, label {
+    text-align: left;
+    margin-right: 5px; /* Justera detta för att skapa mellanrum mellan labelfälten och inputfälten */
+}
+
+.bokaresaform input {
+    margin-bottom: 8%;
 }
 
 #additional-info {
     resize: vertical;
     width: 80%;
+}
+
+.aterkommande {
+    margin-bottom: 10%;
 }
 
 @media screen and (min-width: 992px) {
